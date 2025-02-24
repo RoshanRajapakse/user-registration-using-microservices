@@ -1,0 +1,30 @@
+├───backend                      # Backend microservices
+│   ├───api-gateway-service      # API Gateway for routing requests
+│   │   └───src
+│   │       └───main
+│   │           ├───java
+│   │           │   └───com.tushar.crypto.apigateway  # API Gateway package
+│   │           └───resources                         # Configuration files (e.g., application.yml)
+│   ├───service-discovery       # Service Discovery (Eureka, Consul, etc.)
+│   │   └───src
+│   │       └───main
+│   │           ├───java
+│   │           │   └───org.tushar.user                # Service discovery package
+│   │           └───resources                          # Configurations
+│   └───user-registration      # Microservice for user registration & management
+│       ├───java
+│       │   └───com.tushar.usermanagement             # User Management Microservice
+│       │       ├───config                             # Configuration classes
+│       │       ├───exception                          # Custom exception handling
+│       │       ├───message                            # Message queue handling (RabbitMQ/Kafka)
+│       │       ├───model                              # Database entity models
+│       │       ├───repository                         # Data access layer (JPA/Hibernate)
+│       │       ├───request                            # Request DTOs (Data Transfer Objects)
+│       │       ├───resources                          # Spring Boot resource configurations
+│       │       └───service                            # Business logic services
+│       └───resources                                 # Configuration files (e.g., application.yml)
+├───images                     # Static images/assets
+└───ui                         # Frontend user interface
+    └───src
+        ├───components         # React/Vue/Angular UI components
+        └───constants          # Global constants/configs for frontend
